@@ -11,11 +11,9 @@ class CustomHandler:
         print("----------------------\n")
         return "250 Wiadomość odebrana"
 
-# Konfiguracja SSL
 ssl_context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
 ssl_context.load_cert_chain("cert.pem", "key.pem")
 
-# Uruchom serwer na porcie 587 z obsługą STARTTLS
 controller = Controller(
     CustomHandler(),
     hostname="localhost",
