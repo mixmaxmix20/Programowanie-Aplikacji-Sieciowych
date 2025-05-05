@@ -6,9 +6,10 @@ d3pvc3RhQHBhc3Rlc3QucGw=  # echo -n "pas2017@interia.pl" | base64
 # echo -n "P4SInf2017" | base64
 MAIL FROM:<pas2017@interia.pl>
 RCPT TO:<pasinf2017@interia.pl>
+RCPT TO:<pas2017@interia.pl>
 DATA
 From: <pas2017@interia.pl>
-To: <pasinf2017@interia.pl>
+To: <pasinf2017@interia.pl>, <pas2017@interia.pl>
 Subject: Test
 Content-Type: text/plain; charset=UTF-8
 

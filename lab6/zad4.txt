@@ -1,0 +1,29 @@
+EHLO pas2017
+AUTH LOGIN
+d3pvc3RhQHBhc3Rlc3QucGw=  # echo -n "pas2017@interia.pl" | base64
+# echo -n "P4SInf2017" | base64
+MAIL FROM:<pas2017@interia.pl>
+RCPT TO:<pasinf2017@interia.pl>
+DATA
+From: <pas2017@interia.pl>
+To: <pasinf2017@interia.pl>
+Subject: Test z załącznikiem
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="XYZ_ABC_123"
+
+--XYZ_ABC_123
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Test
+
+--XYZ_ABC_123
+Content-Type: text/plain; name="plik.txt"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="plik.txt"
+
+$(cat plik.base64)
+
+--XYZ_ABC_123--
+.
+QUIT
