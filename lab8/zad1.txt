@@ -1,0 +1,7 @@
+telnet 212.182.24.27 143
+LOGIN "pasinf2017@infumcs.edu" "P4SInf2017"
+LIST "" "*"
+SELECT INBOX
+FETCH 1 BODY[]
+STORE 1 +FLAGS (\Seen)
+LOGOUT
