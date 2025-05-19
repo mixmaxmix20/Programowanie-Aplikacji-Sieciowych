@@ -2,13 +2,13 @@ import socket
 import threading
 
 messages = [
-    "From: test1@example.com\r\nSubject: Hello 1\r\n\r\nThis is the first test email.\r\n",
-    "From: test2@example.com\r\nSubject: Hello 2\r\n\r\nThis is the second test email.\r\n",
-    "From: test3@example.com\r\nSubject: Hello 3\r\n\r\nThis is the third test email.\r\n"
+    "From: pas2017@interia.pl\r\nSubject: Test 1.\r\n",
+    "From: pas2017@interia.pl\r\nSubject: Test 2.\r\n",
+    "From: pas2017@interia.pl\r\nSubject: Test 3.\r\n"
 ]
 
-USERNAME = "user"
-PASSWORD = "pass"
+USERNAME = "pas2017@interia.pl"
+PASSWORD = "P4SInf2017"
 
 def handle_client(conn, addr):
     print(f"[+] Połączono z {addr}")
